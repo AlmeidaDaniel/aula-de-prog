@@ -1,4 +1,7 @@
-/*Programa de exercício da aula 03.
+/*Autor: Daniel A. Bulhões;
+Github: https://github.com/AlmeidaDaniel/aula-de-prog/blob/master/programacao-estruturada/exercicio-de-conversao.c
+
+Programa de exercício da aula 03.
 >> Conversão decimal -> base(2 a 16)
 etapas:
 1) o que o programa faz: conversão de um numero de base 10 para qualquer base de 2 a 16.
@@ -22,9 +25,7 @@ int main(){
     scanf("%d", &decimal);
     printf("\n\nInforme a base para a conversao: ");
     scanf("%d", &base);
-
     Converter(decimal,base);
-
 }
 
 void Converter(int num, int base){
