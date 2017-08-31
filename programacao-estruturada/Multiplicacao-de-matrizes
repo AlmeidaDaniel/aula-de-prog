@@ -1,0 +1,21 @@
+#include<stdio.h>
+int matrizA[3][3]={{1,1,1},{1,1,1},{1,1,1}};
+int matrizB[3][3]={{1,1,1},{1,1,1},{1,1,1}};
+int linha,coluna,i,j;
+
+int main(){
+
+    for(linha=0;linha<=2;linha++){
+        for(coluna = 0; coluna <= 2; coluna++){
+            printf("\nInforme o item %d %d da matriz A: ",linha,coluna);
+            scanf("%d", &matrizA[ linha ][ coluna ]);
+        }
+    }
+    for ( linha=0; linha<3; linha++ ){
+        for ( coluna=0; coluna<3; coluna++ ){
+            printf("\nInforme o item %d %d da matriz B: ",linha,coluna);
+            scanf("%d", &matrizB[ linha ][ coluna ]);
+        }
+    }
+return 0;
+}
