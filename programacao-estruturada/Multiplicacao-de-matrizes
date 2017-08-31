@@ -1,6 +1,7 @@
 #include<stdio.h>
 int matrizA[3][3]={{1,1,1},{1,1,1},{1,1,1}};
 int matrizB[3][3]={{1,1,1},{1,1,1},{1,1,1}};
+int matrizR[3][3]={{1,1,1},{1,1,1},{1,1,1}};
 int linha,coluna,i,j;
 
 int main(){
@@ -17,5 +18,22 @@ int main(){
             scanf("%d", &matrizB[ linha ][ coluna ]);
         }
     }
+
 return 0;
+}
+
+int Multiplicacao(int matrizA[][], int matrizB[][]){
+    for ( linha=0; linha<3; linha++ ){
+        for ( coluna=0; coluna<3; coluna++ ){
+            for ( i=0; i<3; i++ ){
+                for ( j=0; j<3; j++ ){
+                    for ( n=0; n<3; n++ ){
+                        for ( m=0; m<3; m++ ){
+                            matrizR[linha][coluna] = ((matrizA[i][j])*(matrizB[i][j])+((matrizA[i][j])*(matrizB[j][i])));
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
